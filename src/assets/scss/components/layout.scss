@@ -1,0 +1,54 @@
+/* Layout.css (or use a .scss file) */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set a minimum height to fill the viewport */
+}
+
+// .Header {
+//   position: sticky;
+//   top: 0;
+//   z-index: 100;
+//   background-color: #fff;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// }
+
+.container {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: calc(100vh - 70px); /* Adjust for header height */
+  padding-top: 20px;
+}
+
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb { 
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  /* Adjust the layout for screens smaller than medium (768px) */
+  // .container {
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  // }
+}
+
+@media (max-width: 992px) {
+  /* Adjust the layout for screens smaller than large (992px) */
+  .col-md-3 {
+    display: none; /* Hide the sidebar on smaller screens */
+  }
+  .col-md-9 {
+    width: 100%; /* Make content full-width on smaller screens */
+  }
+}

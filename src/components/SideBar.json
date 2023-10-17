@@ -1,0 +1,38 @@
+{
+  "home": {
+    "uiPath": "/home",
+    "spanID": "homeID",
+    "iconName": "Home",
+    "iconID": "Home"
+  },
+  "Dashboard": {
+    "uiPath": "/dashboard",
+    "spanID": "DashboardID",
+    "iconName": "bar_chart_4_bars",
+    "iconID": "DashboardIcon"
+  },
+  "Brand Management": {
+    "uiPath": "/brandmanagement",
+    "spanID": "BrandManagementID",
+    "iconName": "hail",
+    "iconID": "BrandManagementIcon"
+  },
+  "Plan Management": {
+    "uiPath": "/planmanagement",
+    "spanID": "PlanManagementID",
+    "iconName": "planner_banner_ad_pt",
+    "iconID": "PlanManagementIcon"
+  },
+  "Menu Management": {
+    "uiPath": "/menumanagement",
+    "spanID": "mealPlanMenuId",
+    "iconName": "restaurant_menu",
+    "iconID": "MenuManagementIcon"
+  },
+  "Country Management": {
+    "uiPath": "/countrymanagement",
+    "spanID": "countryId",
+    "iconName": "flag",
+    "iconID": "countryIcon"
+  }
+}

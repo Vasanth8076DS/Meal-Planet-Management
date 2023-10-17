@@ -1,0 +1,20 @@
+$header-top: 0px;
+$header-height: 70px;
+$header-background: #ffffff;
+$header-box-shadow: 0px 2px 6px #0000000a;
+$header-border-radius: 25px 0px 0px 0px;
+$header-opacity: 1;
+
+.header {
+  height: $header-height;
+  background: $header-background;
+  box-shadow: $header-box-shadow;
+  border-radius: $header-border-radius;
+  opacity: $header-opacity;
+
+  @media (max-width: 991px) {
+    // Adjust header styles for screens smaller than 992px
+    height: auto;
+    border-radius: 0;
+  }
+}
