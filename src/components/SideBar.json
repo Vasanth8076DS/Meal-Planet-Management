@@ -34,5 +34,43 @@
     "spanID": "countryId",
     "iconName": "flag",
     "iconID": "countryIcon"
+  },
+  "City Management": {
+    "uiPath": "/citymanagement",
+    "spanID": "cityId",
+    "iconName": "location_city",
+    "iconID": "cityIcon"
+  },
+
+  "Category ": {
+    "uiPath": "/category",
+    "spanID": "categoryId",
+    "iconName": "category",
+    "iconID": "categoryIcon"
+  },
+  "Kitchen ": {
+    "uiPath": "/kitchen",
+    "spanID": "kitchenId",
+    "iconName": "cooking",
+    "iconID": "cookingIcon"
+  },
+  "Menu Group ": {
+    "uiPath": "/menugroup",
+    "spanID": "menugroupId",
+    "iconName": "widgets",
+    "iconID": "menuGroupIcon"
+  },
+
+  "Package": {
+    "uiPath": "/package",
+    "spanID": "packageId",
+    "iconName": "package_2",
+    "iconID": "packageIcon"
+  },
+  "Delivery Slot": {
+    "uiPath": "/deliveryslot",
+    "spanID": "deliveryslotId",
+    "iconName": "concierge",
+    "iconID": "deliveryslotIcon"
   }
 }

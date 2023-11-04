@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import BrandForm from "./BrandForm";
-import CountryForm from "../countryManagement/countryForm";
+
 
 
 function BrandManagement() {
@@ -25,7 +25,6 @@ function BrandManagement() {
   return (
     <>
       <BrandForm />
-      <CountryForm/>
 
       <div className="row">
         {brands?.map((brand) => (

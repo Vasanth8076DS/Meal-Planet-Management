@@ -3,12 +3,12 @@ import Input from "../common/Input";
 import { useForm } from "../hook/form-hook";
 import * as Yup from "yup";
 
-const validationSchema = Yup.object().shape({
-  brandId: Yup.string().required("Brand ID is required"),
-  brandName: Yup.string().required("Brand Name is required"),
-  brandIdLogoUrl: Yup.string().required("Brand Logo URL is required"),
-  brandDesc: Yup.string().required("Brand Description is required"),
-});
+// const validationSchema = Yup.object().shape({
+//   brandId: Yup.string().required("Brand ID is required"),
+//   brandName: Yup.string().required("Brand Name is required"),
+//   brandIdLogoUrl: Yup.string().required("Brand Logo URL is required"),
+//   brandDesc: Yup.string().required("Brand Description is required"),
+// });
 
 function BrandForm(props) {
   // Define the initial input configuration
@@ -35,7 +35,6 @@ function BrandForm(props) {
 
     try {
       // Use Yup to validate the form data
-      await validationSchema.validate(formState.inputs, { abortEarly: false });
 
       // If validation succeeds, you can proceed with form submission
       const formData = {
@@ -55,7 +54,7 @@ function BrandForm(props) {
 
   return (
     <div>
-      <h2>Brand Form</h2>
+      <h2 style={{ textAlign: "center" }}>Brand Form</h2>
       <form onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-6">
@@ -67,8 +66,9 @@ function BrandForm(props) {
               name="brandId"
               value={formState.inputs.brandId.value}
               onInput={inputHandler}
-              className="form-control"
+              className="brand-input"
               labelClassName="mt-2"
+              placeholder="Brand Id"
             />
           </div>
           <div className="col-6">
@@ -80,8 +80,9 @@ function BrandForm(props) {
               name="brandName"
               value={formState.inputs.brandName.value}
               onInput={inputHandler}
-              className="form-control"
+              className="brand-input"
               labelClassName="mt-2"
+              placeholder="Brand Name"
             />
           </div>
         </div>
@@ -90,13 +91,14 @@ function BrandForm(props) {
             <Input
               id="brandIdLogoUrl"
               element="input"
-              type="text"
-              label="Brand Logo URL"
+              type="file"
+              label="Brand Logo"
               name="brandIdLogoUrl"
               value={formState.inputs.brandIdLogoUrl.value}
               onInput={inputHandler}
-              className="form-control"
+              className="brand-input"
               labelClassName="mt-2"
+              placeholder="Brand Image"
             />
           </div>
           <div className="col-6 mt-3">
@@ -108,17 +110,19 @@ function BrandForm(props) {
               name="brandDesc"
               value={formState.inputs.brandDesc.value}
               onInput={inputHandler}
-              className="form-control"
+              className="brand-input"
               labelClassName="mt-2"
+              placeholder="Brand Desc"
             />
           </div>
         </div>
         <div className="row">
-          <div className="col-6"></div>
-
-          <button type="submit" className="btn btn-primary mt-3">
-            Submit
-          </button>
+          <div className="col-12 mt-3 text-center">
+            <button className="cancel_button">Cancel</button>
+            <button class="save_button_brand " style={{ marginLeft: "10px" }}>
+              save
+            </button>
+          </div>
         </div>
       </form>
     </div>

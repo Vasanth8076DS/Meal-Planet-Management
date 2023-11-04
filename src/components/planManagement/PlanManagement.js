@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import ImportPlanSheet from "./ImportPlan";
+import PlanForm from "./PlanForm";
 
 function PlanManagement() {
   const [plans, setPlans] = useState([]);
@@ -29,8 +30,9 @@ function PlanManagement() {
       <div class="courses-container">
         <div className="row mt-5">
           <ImportPlanSheet />
+          <PlanForm />
         </div>
-        <div className="row mt-5">
+        {/* <div className="row mt-5">
           {plans.map((plan) => (
             <li class="cards_item" key={plan?.id}>
               <div class="plan_card ">
@@ -62,7 +64,7 @@ function PlanManagement() {
               </div>
             </li>
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   );
